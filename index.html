@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 78</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h4 id="family_member_name"></h4>
+    <img src="image1.jpg" style="width: 30%" id="family_member_image"/>
+    <button onclick="update();">Next</button>
+    <script>
+      var images = ["image1.jpg","image2.png","image3.jpg","image4.png"];
+
+      var names = ["Sikimuddin Ahmed","Sabina Yasmin","Shehroze Almas","Sohaim Sahi"];
+
+      var i = 0;
+      function update()
+      {
+
+    	
+    	document.getElementById("family_member_image").src = images[i];
+    	document.getElementById("family_member_name").innerHTML = names[i];
+    	
+    		i++;
+      }
+    	
+  </script>
+  </body>
+  
+</html>
